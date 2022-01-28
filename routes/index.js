@@ -6,8 +6,8 @@ router.get("/", function (req, res, next) {
   res.render("index", {title: "ZedsDeadPoly"})
 })
 
-router.get("/health", (req, res) => {
-  res.send("Server Working")
+router.get("/admin", (req, res) => {
+  res.render("admin", {title: "Admin"})
 })
 
 module.exports = router
